@@ -9,7 +9,7 @@
           alt="美团">
       </el-col>
       <el-col
-        :span="15"
+        :span="16"
         class="center">
         <div class="wrapper">
           <el-input
@@ -26,7 +26,7 @@
             <dd
               v-for="(item, idx) in $store.state.home.hotPlace.slice(0, 5)"
               :key="idx">
-              <a :href="'/products?keyword='+encodeURIComponent(item.name)">{{ item.name }}</a>  
+              <a :href="'/products?keyword='+encodeURIComponent(item.name)">{{ item.name }}</a>
             </dd>
           </dl>
           <dl
@@ -35,7 +35,7 @@
             <dd
               v-for="(item, idx) in searchList"
               :key="idx">
-              <a :href="'/products?keyword='+encodeURIComponent(item.name)">{{ item.name }}</a>  
+              <a :href="'/products?keyword='+encodeURIComponent(item.name)">{{ item.name }}</a>
             </dd>
           </dl>
         </div>
